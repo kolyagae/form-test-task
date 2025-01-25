@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test task</title>
+  </head>
+  <body>
+    <p class="success-message" id="success-message"></p>
+    <form id="contactForm" class="contact-form">
+      <label>
+        Имя
+        <input type="text" id="name" name="name" />
+        <span class="error-message"></span>
+      </label>
+      <label>
+        E-mail
+        <input type="email" id="email" name="email" />
+        <span class="error-message"></span>
+      </label>
+      <label>
+        Телефон
+        <input type="text" id="phone" name="phone" />
+        <span class="error-message"></span>
+      </label>
+      <label>
+        Сообщение
+        <textarea id="message" name="message"></textarea>
+        <span class="error-message"></span>
+      </label>
+      <button type="submit">Отправить</button>
+    </form>
+    <button id="openModal" class="modal-open-btn">
+      Открыть модальное окно
+    </button>
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <h2>Модальное окно</h2>
+        <p>Ваше окно успешно открыто!</p>
+        <button id="closeModal" class="modal-close-btn">
+          Отличное окно! Закрыть
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
